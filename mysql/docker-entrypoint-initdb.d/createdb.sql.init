@@ -1,0 +1,23 @@
+-- java_boot_test
+CREATE USER 'java_boot_test'@'%' identified by 'java_boot_test';
+CREATE DATABASE IF NOT EXISTS `java_boot_test` ;
+GRANT ALL ON `java_boot_test`.* TO 'java_boot_test'@'%' ;
+
+-- pandax_iot
+CREATE USER 'pandax_iot'@'%' identified by 'pandax_iot';
+CREATE DATABASE IF NOT EXISTS `pandax_iot` ;
+GRANT ALL ON `pandax_iot`.* TO 'pandax_iot'@'%' ;
+
+-- hainancustomerstation_jobhainan
+CREATE USER 'hainan'@'%' identified by 'hainan';
+CREATE DATABASE IF NOT EXISTS `hainan` ;
+GRANT ALL ON `hainan`.* TO 'hainan'@'%' ;
+
+-- hainan
+CREATE USER 'customerstation'@'%' identified by 'customerstation';
+CREATE DATABASE IF NOT EXISTS `customerstation` ;
+CREATE DATABASE IF NOT EXISTS `customerstation_job` ;
+GRANT ALL ON `customerstation`.* TO 'customerstation'@'%' ;
+GRANT ALL ON `customerstation_job`.* TO 'customerstation'@'%' ;
+
+FLUSH PRIVILEGES ;
